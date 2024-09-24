@@ -1,3 +1,7 @@
+# LazyVim
+
+## the nvim file is LazyVim and is main config for neovim
+
 # kickstart.nvim
 
 ## Introduction
