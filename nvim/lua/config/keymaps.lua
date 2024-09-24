@@ -187,12 +187,12 @@ vim.api.nvim_set_keymap('n', '<leader>fp', '<cmd>Telescope projects<CR>', { nore
 --    end, { desc = '[/] Fuzzily search in current buffer' })
 
 -- Key mappings for Harpoon
-map('n', '<leader>ha', ":lua require('harpoon.mark').add_file()<cr>", { desc = "add file" })
-map('n', '<leader>hh', ":lua require('harpoon.ui').toggle_quick_menu()<cr>", { desc = "toggle menu" })
-map('n', '<leader>hj', ":lua require('harpoon.ui').nav_file(1)<cr>", { desc = "file 1" })
-map('n', '<leader>hk', ":lua require('harpoon.ui').nav_file(2)<cr>", { desc = "file 2" })
-map('n', '<leader>hl', ":lua require('harpoon.ui').nav_file(3)<cr>", { desc = "file 3" })
-map('n', '<leader>h;', ":lua require('harpoon.ui').nav_file(4)<cr>", { desc = "file 4" })
+--map('n', '<leader>ha', ":lua require('harpoon.mark').add_file()<cr>", { desc = "add file" })
+--map('n', '<leader>hh', ":lua require('harpoon.ui').toggle_quick_menu()<cr>", { desc = "toggle menu" })
+--map('n', '<leader>hj', ":lua require('harpoon.ui').nav_file(1)<cr>", { desc = "file 1" })
+--map('n', '<leader>hk', ":lua require('harpoon.ui').nav_file(2)<cr>", { desc = "file 2" })
+--map('n', '<leader>hl', ":lua require('harpoon.ui').nav_file(3)<cr>", { desc = "file 3" })
+--map('n', '<leader>h;', ":lua require('harpoon.ui').nav_file(4)<cr>", { desc = "file 4" })
 
 -- Debug
 map('n', '<leader>dc', ":lua require('dap').continue()<CR>")
@@ -208,3 +208,12 @@ map({ 'n', 'v' }, '<Leader>dh', ":lua require('dap.ui.widgets').hover()<CR>")
 map({ 'n', 'v' }, '<Leader>dp', ":lua require('dap.ui.widgets').preview()<CR>")
 map('n', '<Leader>df', ":lua local widgets = require('dap.ui.widgets'); widgets.centered_float(widgets.frames)<CR>")
 map('n', '<Leader>ds', ":lua local widgets = require('dap.ui.widgets'); widgets.centered_float(widgets.scopes)<CR>")
+
+-- Obsidian
+map('n', '<leader>on', ":ObsidianNew<CR>", { desc = "Create a new note" })
+map('n', '<leader>ot', ":ObsidianNewFromTemplate<CR>", { desc = "Create note from template" })
+map('n', '<leader>op', ":ObsidianPasteImg<CR>", { desc = "Paste an image from clipboard" })
+map('n', '<leader>ob', ":ObsidianBacklinks<CR>", { desc = "Grab a list of backlink in buffer" })
+map('n', '<leader>os', ":ObsidianSearch<CR>", { desc = "Greps words in notes" })
+map('n', '<leader>oo', ":ObsidianOpen<CR>", { desc = "Opens or create note in Obsidian app" })
+map('n', '<leader>ok', ":ObsidianOpen<CR>", { desc = "Opens or create note in Obsidian app" })
